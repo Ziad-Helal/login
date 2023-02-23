@@ -1,7 +1,7 @@
 import { createContext, useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import { registerFetch, loginFetch, getUsersListFetch } from "../../api/api";
 import { useUsersList } from "../../context";
+import { registerFetch, loginFetch, getUsersListFetch } from "../../api/api";
 
 const UserAPI = createContext({
     login: ({ email = "", password = "" }) => {},
@@ -11,7 +11,7 @@ const UserAPI = createContext({
 
 export const UserAPIProvider = ({ children }) => {
     const navigate = useNavigate();
-    const { setUsersList, usersList } = useUsersList();
+    const { setUsersList } = useUsersList();
 
     const login = async ({ email, password }) => {
         const json = await loginFetch({ email, password });

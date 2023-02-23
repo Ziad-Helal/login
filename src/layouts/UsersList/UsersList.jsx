@@ -32,7 +32,7 @@ export default function UsersList({ list = [] }) {
         <section className="usersList bg-white border border-secondary_3_o rounded-xl p-16 my-16">
             <table>
                 <thead>
-                    <tr className="text-xl text-primary_1 bg-secondary_2">
+                    <tr className="text-left text-xl text-primary_1 bg-secondary_2">
                         <th
                             className="p-4 underline cursor-pointer hover:text-primary_2"
                             onClick={srotAlphabetically}
@@ -54,11 +54,11 @@ export default function UsersList({ list = [] }) {
                             key={id}
                             className="border-b border-secondary_3_o hover:bg-primary_1 hover:text-white transition"
                         >
-                            <td className="pr-12 py-4">
+                            <td className="p-4">
                                 {first_name} {last_name}
                             </td>
-                            <td className="px-12 py-4">{email}</td>
-                            <td className="pl-12 py-4">
+                            <td className="p-4">{email}</td>
+                            <td className="p-4">
                                 {moment(created_at).utc().format("MMMM Do YYYY / h:mm a")}
                             </td>
                         </tr>
