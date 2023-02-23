@@ -9,9 +9,9 @@ export default function App() {
                 <UserAPIProvider>
                     <UserProvider>
                         <Routes>
-                            <Route path="/" element={<HomePage />} />
-                            <Route path="/log" element={<LoginPage />} />
-                            <Route path="/reg" element={<RegisterPage />} />
+                            <Route path="/login" element={<HomePage />} />
+                            <Route path="/login/log" element={<LoginPage />} />
+                            <Route path="/login/reg" element={<RegisterPage />} />
                         </Routes>
                     </UserProvider>
                 </UserAPIProvider>
