@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary-color-1: #ff7f00;
+    --primary-color-2: #ff9933;
+    --secondary-color-1: #bebebe;
+    --secondary-color-2: #d9d9d9;
+    --secondary-color-3: #6c6a6a;
+    --secondary-color-3-o: #6c6a6aa6;
+    --secondary-color-4: #afadad;
+}
+
+html {
+    color: var(--secondary-color-3);
+    background-color: var(--secondary-color-1);
+    font-family: "Poppins", sans-serif;
+}
+
+form,
+.usersList {
+    box-shadow: var(--secondary-color-2) 0.75rem 0.75rem 0 0;
+}
